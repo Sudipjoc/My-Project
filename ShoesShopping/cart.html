@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products-MeroJutta / Ecommerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+            <img src="images/logo12.png" width="110px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart.png" width="25px" height="25px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+</div>
+
+<!-------------cart items details --------------->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/" alt="">
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs. 1300</td>
+            </td>
+        </tr>
+    </table>
+</div>
+   
+<!----------------------- footer ----------------------->
+   <div class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-colm-1">
+                    <h3>Check Our Website On</h3>
+                    <p>Check our website for online shopping of the Nepali brand shoes in Less Price.</p>
+                    <div class="app-logo">
+                        <img src="images/facebook.png">
+                        <img src="images/twitter.png">
+                    </div>
+               </div>
+               <div class="footer-colm-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose Is To Sustainable Make the Pleasure<br> and Benefits of Different kind of<br> Shoes Accessible to the Many. </p>
+               </div>
+               <div class="footer-colm-3">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>E-Mail : Mero.jutta@gmail.com</li>
+                        <li>Phone : +9779865623115</li>
+                        <li>Address : Baneshwor, Shantinagar,</li>
+                        <li>Ward No-33</li>
+                    </ul>
+               </div>
+               <div class="footer-colm-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+               </div>        
+           </div>
+           <hr>
+           <p class="copyright">MeroJutta Online Shopping - 2079 BS</p>
+       </div>
+   </div>
+   <!-- --------------js for toggle menu------------------ -->
+   <script>
+       varMenuItems = document.getElementById("MenuItems");
+
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle(){
+           if(MenuItems.style.maxHeight == "0px")
+           {
+               MenuItems.style.maxHeight = "200px"
+           }
+               else
+               {
+                MenuItems.style.maxHeight = "0px";
+               }
+           }
+   </script>
+
+
+
+</body>
+</html>
